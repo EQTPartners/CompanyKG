@@ -1,5 +1,16 @@
 # CompanyKG: Dataset access and evaluation
 
+This repository contains all code released to accompany the release of the CompanyKG
+knowledge graph. For details of the dataset and benchmark experiments, see the official release
+of the dataset:
+[*CompanyKG Dataset: A Large-Scale Heterogeneous Graph for Company Similarity Quantification*](#cite-this-work).
+
+There are two main parts to the code release:
+* CompanyKG dataset access and task evaluations (see below)
+* [Benchmark model training and experiments](./benchmarks/README.md)
+
+
+
 ## Pre-Requisites
 
 * Python 3.8
@@ -27,21 +38,22 @@ pip install -e .
 
 The first time you instantiate the CompanyKG class, if the dataset is not already available
 (in the default subdirectory or another location you specify), the latest version will be automatically
-downloaded from Zenodo:
+downloaded from Zenodo.
 
+
+## Basic usage
+
+By default, the CompanyKG dataset will be loaded from (and, if necessary, downloaded to) 
+a `data` subdirectory of the working directory. To load the dataset from this default location,
+simply instantiate the `CompanyKG` class:
 ```python
 from companykg import CompanyKG
 
 ckg = CompanyKG()
 ```
 
-
-## Basic usage
-
-By default, the CompanyKG dataset will be loaded from (and potentially downloaded to) 
-a `data` subdirectory of the CWD. If you have already downloaded the dataset and want to
+If you have already downloaded the dataset and want to
 load it from its current location, specify the path:
-
 ```python
 ckg = CompanyKG(data_root_folder="/path/to/stored/companykg/directory")
 ```
@@ -87,6 +99,8 @@ the [benchmarks README file](./benchmarks/README.md).
 
 
 ## Cite This Work
+
+Cite the [official release of the CompanyKG dataset on Zenodo](https://zenodo.org/record/8010239):
 ```bibtex
 @article{companykg_2023_8010239,
     author = {Lele Cao and
