@@ -196,7 +196,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--work-folder",
-        default="./experiments/graphsage",
+        default="./experiments",
         type=str,
         help="The working folder where models and logs are saved to",
     )

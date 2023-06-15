@@ -39,10 +39,6 @@ class BaseTrainer(ABC):
         self.device = device if device >= 0 else "cpu"
         self.finetune_from = finetune_from
 
-        # File path to which the final model will be saved
-        self.eval_results_path = self.work_folder / f"{self.hparams_str}.pkl"
-        self.embedding_save_path = self.work_folder / f"{self.hparams_str}.pt"
-
         # Create CompanyKG object
         self.comkg = self.load_companykg()
         self.comkg.describe()
@@ -50,6 +46,10 @@ class BaseTrainer(ABC):
         # Create DGL graph
         self.graph = self.build_graph()
         logger.info(self.graph)
+
+        # File path to which the final model will be saved
+        self.eval_results_path = self.work_folder / f"{self.hparams_str}.pkl"
+        self.embedding_save_path = self.work_folder / f"{self.hparams_str}.pt"
 
         self.model, self.optimizer, self.scheduler = self.init_model(
             load=self.finetune_from
