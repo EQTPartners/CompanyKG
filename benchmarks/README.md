@@ -198,7 +198,6 @@ python -m ckg_benchmarks.graphmae.train \
     --n-layer 2 \
     --embedding_dim 8 \
     --epochs 1 \
-    --batch-size 16 \
     --disable-metis
 ```
 
@@ -210,7 +209,6 @@ trainer = train_model(
     n_layer=2,
     embedding_dim=8,
     epochs=1,
-    batch_size=16,
     disable_metis=True,
 )
 ```
@@ -229,7 +227,6 @@ python -m ckg_benchmarks.egraphmae.train \
     --n-layer 2 \
     --embedding-dim 8 \
     --epochs 1 \
-    --batch-size 16 \
     --disable-metis
 ```
 
@@ -241,7 +238,6 @@ trainer = train_model(
     n_layer=2,
     embedding_dim=8,
     epochs=1,
-    batch_size=16,
     disable_metis=True,
 )
 ```
