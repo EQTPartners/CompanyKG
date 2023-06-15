@@ -13,6 +13,6 @@ python -m ckg_benchmarks.graphsage.train \
     --embedding-dim 8 \
     --data-root-folder ./data \
     --device -1 \
-    --training-batch-size 256 \
+    --train-batch-size 256 \
     --inference-batch-size 256 \
     --n-sample-neighbor 2

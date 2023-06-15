@@ -163,6 +163,36 @@ trainer = train_model(
 
 Train from command line:
 ```bash
+python -m ckg_benchmarks.graphsage.train \
+    --device -1 \
+    --n-layer 2 \
+    --embedding_dim 8 \
+    --epochs 1 \
+    --train-batch-size 256 \
+    --inference-batch-size 256 \
+    --n-sample-neighbor 2 \
+```
+
+The same thing from Python code:
+```python
+from ckg_benchmarks.graphsage.train import train_model
+trainer = train_model(
+    device=-1,
+    n_layer=2,
+    embedding_dim=8,
+    epochs=1,
+    train_batch_size=256,
+    inference_batch_size=256,
+    n_sample_neighbor=2,
+)
+```
+
+
+
+#### GraphMAE
+
+Train from command line:
+```bash
 python -m ckg_benchmarks.graphmae.train \
     --device -1 \
     --n-layer 2 \
@@ -174,7 +204,7 @@ python -m ckg_benchmarks.graphmae.train \
 
 The same thing from Python code:
 ```python
-from ckg_benchmarks.graphsage.train import train_model
+from ckg_benchmarks.graphmae.train import train_model
 trainer = train_model(
     device=-1,
     n_layer=2,
@@ -188,37 +218,6 @@ trainer = train_model(
 `disable_metis` is useful for training with small memory, but you may want to
 drop this option for more efficient training.
 
-
-
-#### GraphMAE
-
-Train from command line:
-```bash
-python -m ckg_benchmarks.graphmae.train \
-    --device -1 \
-    --n-layer 2 \
-    --embedding_dim 8 \
-    --epochs 1 \
-    --training-batch-size 256 \
-    --inference-batch-size 256 \
-    --n-sample-neighbor 2 \
-    --disable-metis
-```
-
-The same thing from Python code:
-```python
-from ckg_benchmarks.graphmae.train import train_model
-trainer = train_model(
-    device=-1,
-    n_layer=2,
-    embedding_dim=8,
-    epochs=1,
-    training_batch_size=256,
-    inference_batch_size=256,
-    n_sample_neighbor=2,
-    disable_metis=True,
-)
-```
 
 
 #### eGraphMAE
