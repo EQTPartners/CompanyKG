@@ -13,5 +13,4 @@ python -m ckg_benchmarks.graphmae.train \
     --embedding-dim 8 \
     --data-root-folder ./data \
     --device -1 \
-    --batch-size 16 \
     --disable-metis
