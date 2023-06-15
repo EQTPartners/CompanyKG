@@ -207,7 +207,7 @@ if __name__ == "__main__":
         help="The number of neighbor to be sampled",
     )
     parser.add_argument(
-        "--train-batch.size",
+        "--train-batch-size",
         default=2048,
         type=ranged_type(int, 16, 2**15),
         help="The number of samples in each training mini-batch",
