@@ -39,6 +39,10 @@ class BaseTrainer(ABC):
         self.device = device if device >= 0 else "cpu"
         self.finetune_from = finetune_from
 
+        # File path to which the final model will be saved
+        self.eval_results_path = self.work_folder / f"{self.hparams_str}.pkl"
+        self.embedding_save_path = self.work_folder / f"{self.hparams_str}.pt"
+
         # Create CompanyKG object
         self.comkg = self.load_companykg()
         self.comkg.describe()
@@ -85,22 +89,6 @@ class BaseTrainer(ABC):
     @abstractmethod
     def inference(self) -> torch.Tensor:
         ...
-
-    def eval(self, embed):
-        """
-        Run evaluation at the end of training.
-
-        :return: eval results dict
-        """
-        eval_results = self.comkg.evaluate(embed=embed, silent=True)
-        logger.info("SP AUC: {}".format(eval_results["sp_auc"]))
-        logger.info(
-            "SR Validation Accuracy: {}".format(eval_results["sr_validation_acc"])
-        )
-        logger.info("SR Test Accuracy: {}".format(eval_results["sr_test_acc"]))
-        logger.info(f"CR Top-K: {self.comkg.eval_cr_top_ks}")
-        logger.info("CR Top-K Hit Rates: {}".format(eval_results["cr_topk_hit_rate"]))
-        return eval_results
 
     def train_model(self):
         set_random_seed(self.seed)
