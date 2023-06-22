@@ -1,13 +1,15 @@
-# CompanyKG: Dataset Access and Evaluation
+![CompanyKG](./picture/logo_400x113.png)
+
+## A Large-Scale Heterogeneous Graph for Company Similarity Quantification
 
 <div>
 <p align="left">
   <a href="#setup">Setup</a> •
   <a href="#basic-usage">Usage</a> •
+  <a href="https://zenodo.org/record/8010239">Dataset</a> •
   <a href="#training-benchmark-models">Benchmark</a> •
   <a href="https://github.com/EQTPartners/CompanyKG/blob/main/tutorials/tutorial.ipynb">Tutorial</a> •
   <a href="https://arxiv.org/abs/2306.10649">Paper</a> •
-  <a href="https://zenodo.org/record/8010239">Dataset</a> •
   <a href="#cite-this-work">Citation</a> 
 </p>
 
