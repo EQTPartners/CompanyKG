@@ -1,9 +1,28 @@
-# CompanyKG: Dataset access and evaluation
+<div align="center">
+
+<p style="font-size:200%;">CompanyKG: Dataset Access and Evaluation</p>
+
+------
+
+<p align="center">
+  <a href="#setup">Setup</a> •
+  <a href="#basic-usage">Usage</a> •
+  <a href="#training-benchmark-models">Benchmark</a> •
+  <a href="https://github.com/EQTPartners/CompanyKG/blob/main/tutorials/tutorial.ipynb">Tutorial</a> •
+  <a href="https://arxiv.org/abs/2306.10649">Paper</a> •
+  <a href="https://zenodo.org/record/8010239">Dataset</a> •
+  <a href="#cite-this-work">Citation</a> 
+</p>
+
+</div>
+
+[![version](https://img.shields.io/badge/Version-v1.1-green)](https://github.com/EQTPartners/CompanyKG/releases/tag/1.1)
+[![python](https://img.shields.io/badge/Python-3.8-yellow)](https://www.python.org/doc/versions/)
+[![python](https://img.shields.io/badge/Motherbrain-Research-orange)](https://motherbrain.ai/)
 
 This repository contains all code released to accompany the release of the CompanyKG
-knowledge graph. For details of the dataset and benchmark experiments, see the official release
-of the dataset:
-[*CompanyKG Dataset: A Large-Scale Heterogeneous Graph for Company Similarity Quantification*](#cite-this-work).
+knowledge graph. 
+For details of the dataset and benchmark experiments, see the official release of the [paper](https://arxiv.org/abs/2306.10649) and [dataset](https://zenodo.org/record/8010239).
 
 There are two main parts to the code release:
 * CompanyKG dataset access and task evaluations (see below)
@@ -100,22 +119,39 @@ the [benchmarks README file](./benchmarks/README.md).
 
 ## Cite This Work
 
+Cite the [official release of the CompanyKG paper on Arxiv](https://arxiv.org/abs/2306.10649):
+```bibtex
+@article{cao2023companykg,
+    author = {Lele Cao and
+              Vilhelm von Ehrenheim and
+              Mark Granroth-Wilding and
+              Richard Anselmo Stahl and
+              Drew McCornack and
+              Armin Catovic and
+              Dhiana Deva Cavacanti Rocha},
+    title = {{CompanyKG Dataset: A Large-Scale Heterogeneous Graph for Company Similarity Quantification}},
+    year={2023},
+    journal={arXiv preprint arXiv:2306.10649},
+    primaryClass={cs.AI}
+}
+```
+
 Cite the [official release of the CompanyKG dataset on Zenodo](https://zenodo.org/record/8010239):
 ```bibtex
 @article{companykg_2023_8010239,
     author = {Lele Cao and
-                Vilhelm von Ehrenheim and
-                Mark Granroth-Wilding and
-                Richard Anselmo Stahl and
-                Drew McCornack and
-                Armin Catovic and
-                Dhiana Deva Cavacanti Rocha},
+              Vilhelm von Ehrenheim and
+              Mark Granroth-Wilding and
+              Richard Anselmo Stahl and
+              Drew McCornack and
+              Armin Catovic and
+              Dhiana Deva Cavacanti Rocha},
     title = {{CompanyKG Dataset: A Large-Scale Heterogeneous Graph for Company Similarity Quantification}},
     month = June,
     year = 2023,
-    journal = {Zenodo},
+    publisher = {Zenodo},
     version = {1.1},
-    volume = {10.5281/zenodo.8010239},
+    doi = {10.5281/zenodo.8010239},
     url = {https://doi.org/10.5281/zenodo.8010239}
 }
 ```
