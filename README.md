@@ -1,10 +1,7 @@
-<div align="center">
+# CompanyKG: Dataset Access and Evaluation
 
-<p style="font-size:200%;">CompanyKG: Dataset Access and Evaluation</p>
-
-------
-
-<p align="center">
+<div>
+<p align="left">
   <a href="#setup">Setup</a> •
   <a href="#basic-usage">Usage</a> •
   <a href="#training-benchmark-models">Benchmark</a> •
