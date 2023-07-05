@@ -239,7 +239,7 @@ class CompanyKG:
             try:
                 with np.errstate(invalid="ignore"):
                     pred.append(
-                        1 - spatial.distance.cosine(node_embeds[0], node_embeds[1])
+                        1 - 0.5 * spatial.distance.cosine(node_embeds[0], node_embeds[1])
                     )
             except:
                 print(row)
@@ -265,8 +265,8 @@ class CompanyKG:
             candidate0_embed = embed[row["candidate0_node_id"]]
             candidate1_embed = embed[row["candidate1_node_id"]]
             with np.errstate(invalid="ignore"):
-                _p1 = 1 - spatial.distance.cosine(query_embed, candidate0_embed)
-                _p2 = 1 - spatial.distance.cosine(query_embed, candidate1_embed)
+                _p1 = 1 - 0.5 * spatial.distance.cosine(query_embed, candidate0_embed)
+                _p2 = 1 - 0.5 * spatial.distance.cosine(query_embed, candidate1_embed)
             pred.append(0) if _p1 >= _p2 else pred.append(1)
         return accuracy_score(gt, pred)
 
