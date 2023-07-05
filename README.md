@@ -1,4 +1,4 @@
-![CompanyKG](./picture/logo_400x113.png)
+![CompanyKG Logo](./picture/logo_400x113.png)
 
 ## A Large-Scale Heterogeneous Graph for Company Similarity Quantification
 
@@ -20,8 +20,10 @@
 [![python](https://img.shields.io/badge/Motherbrain-Research-orange)](https://motherbrain.ai/)
 
 This repository contains all code released to accompany the release of the CompanyKG
-knowledge graph. 
+knowledge graph illustrated in Figure 1 below. 
 For details of the dataset and benchmark experiments, see the official release of the [paper](https://arxiv.org/abs/2306.10649) and [dataset](https://zenodo.org/record/8010239).
+
+![CompanyKG Illustration](./picture/companykg_illustration.png)
 
 There are two main parts to the code release:
 * CompanyKG dataset access and task evaluations (see below)
