@@ -134,3 +134,6 @@ dmypy.json
 # data
 *.parquet.gz
 *.pt
+
+# experiment related
+experiments
