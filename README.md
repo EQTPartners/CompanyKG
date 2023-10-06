@@ -10,6 +10,7 @@
   <a href="#training-benchmark-models">Benchmark</a> •
   <a href="https://github.com/EQTPartners/CompanyKG/blob/main/tutorials/tutorial.ipynb">Tutorial</a> •
   <a href="https://arxiv.org/abs/2306.10649">Paper</a> •
+  <a href="#external-results">External Results</a> •
   <a href="#cite-this-work">Citation</a> 
 </p>
 
@@ -116,6 +117,11 @@ pip install -e .
 
 Further instructions for using the benchmarks package for model training and provided in
 the [benchmarks README file](./benchmarks/README.md).
+
+
+## External Results
+We collect all benchmarking results on this dataset here. Welcome to reach out to us (via github issue or [email shown in our paper](https://arxiv.org/pdf/2306.10649.pdf)) if you wish to include your experimental results.
+- [Knorreman](https://github.com/Knorreman/fastRP) reported results using [fastRP algorithm](https://arxiv.org/pdf/1908.11512.pdf) achieving [competitive results](https://github.com/EQTPartners/CompanyKG/issues/1#issuecomment-1749707045) (i.e., `sp_auc=85.7%`, `sr_test_acc=69.2%`, `R@50=0.353`, and `R@100=0.430` obtained on different hyper-parameters and initial node embeddings).
 
 
 ## Cite This Work
