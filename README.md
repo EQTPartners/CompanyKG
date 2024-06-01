@@ -126,7 +126,7 @@ We collect all benchmarking results on this dataset here. Welcome to reach out t
 
 ## Cite This Work
 
-Cite the [official release of the CompanyKG paper on Arxiv](https://arxiv.org/abs/2306.10649):
+Cite the [paper](https://arxiv.org/abs/2306.10649):
 ```bibtex
 @article{cao2023companykg,
     author = {Lele Cao and
@@ -136,10 +136,10 @@ Cite the [official release of the CompanyKG paper on Arxiv](https://arxiv.org/ab
               Drew McCornack and
               Armin Catovic and
               Dhiana Deva Cavacanti Rocha},
-    title = {{CompanyKG Dataset: A Large-Scale Heterogeneous Graph for Company Similarity Quantification}},
-    year={2023},
-    journal={arXiv preprint arXiv:2306.10649},
-    primaryClass={cs.AI}
+    title = {{CompanyKG: A Large-Scale Heterogeneous Graph for Company Similarity Quantification}},
+    journal = {IEEE Transactions on Big Data},
+    year = {2024},
+    doi = {10.1109/TBDATA.2024.3407573}
 }
 ```
 
