@@ -1,3 +1,11 @@
+<div align="center">
+  <h1>⚠️ Repository Upgraded and Migrated to Version 2.x ⚠️</h1>
+  <p>This repository corresponds to CompanyKG Version 1.x. We have extended this work to Version 2.x, hosted in a <a href="https://github.com/llcresearch/CompanyKG2">new repository</a>. For ease of maintenance, we recommend submitting issues and pull requests for both Version 1.x and 2.x to the <a href="https://github.com/llcresearch/CompanyKG2">CompanyKG2 repository</a>.</p>
+</div>
+
+
+---
+
 ![CompanyKG Logo](./picture/logo_400x113.png)
 
 ## A Large-Scale Heterogeneous Graph for Company Similarity Quantification
